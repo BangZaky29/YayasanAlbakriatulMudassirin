@@ -4,5 +4,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap declaration
-Sitemap: https://albakriatulmudassirin.sch.id/sitemap.xml
+Sitemap: https://albakriatulmudassirin.bangzaky0029.workers.dev/sitemap.xml

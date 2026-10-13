@@ -151,7 +151,7 @@ npm run preview
 - **Alamat Kampus**: FMCQ+9W7, Jl. Raya Ciaruteun Ilir, Kec. Cibungbulang, Kabupaten Bogor, Jawa Barat 16630
 - **Layanan PPDB / WhatsApp**: [081995770190](https://wa.me/6281995770190)
 - **Jam Operasional**: Senin – Sabtu (07:30 – 16:00 WIB)
-- **Website**: [albakriatulmudassirin.sch.id](https://albakriatulmudassirin.sch.id/)
+- **Website**: [albakriatulmudassirin.bangzaky0029.workers.dev](https://albakriatulmudassirin.bangzaky0029.workers.dev/)
 
 ---
 
