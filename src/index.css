@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================
+   CUSTOM BASE STYLES
+   ============================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-deep-forest text-paper;
+  }
+}
+
+/* ============================
+   EDITORIAL TYPOGRAPHY
+   ============================ */
+.editorial-title {
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+/* ============================
+   PAPER TEXTURE OVERLAY
+   ============================ */
+.paper-texture {
+  background-image: radial-gradient(#09452b 0.65px, transparent 0.65px);
+  background-size: 24px 24px;
+  opacity: 0.04;
+}
+
+/* ============================
+   STACKED CARD DECK SYSTEM
+   ============================ */
+.deck-card {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.4s ease,
+    box-shadow 0.5s ease;
+  transform-origin: center center;
+}
+
+.deck-card.pos-front {
+  z-index: 30;
+  transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.deck-card.pos-middle {
+  z-index: 20;
+  transform: translate3d(14px, 14px, -30px) scale(0.97) rotate(2deg);
+  opacity: 0.94;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.deck-card.pos-back {
+  z-index: 10;
+  transform: translate3d(-14px, 26px, -60px) scale(0.94) rotate(-2deg);
+  opacity: 0.88;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .deck-card.pos-middle {
+    transform: translate3d(6px, 12px, 0) scale(0.98) rotate(1.2deg);
+  }
+  .deck-card.pos-back {
+    transform: translate3d(-6px, 22px, 0) scale(0.95) rotate(-1.2deg);
+  }
+}
+
+/* ============================
+   GLASSMORPHIC UTILITIES
+   ============================ */
+.glass-header {
+  background: rgba(250, 249, 246, 0.85);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+}
+
+/* ============================
+   SCROLLBAR STYLING
+   ============================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f1ea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #09452b33;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #09452b66;
+}
+
+/* ============================
+   DRAWER TRANSITIONS
+   ============================ */
+.drawer-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+.drawer-panel {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}

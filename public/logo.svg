@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="forestGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e5637" />
+      <stop offset="50%" stop-color="#09452b" />
+      <stop offset="100%" stop-color="#042617" />
+    </linearGradient>
+
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="80%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#09452b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Islamic 8-Point Geometric Crest Ring -->
+  <g transform="translate(80, 80)">
+    <!-- Rotating Octagon Stars Behind -->
+    <rect x="-68" y="-68" width="136" height="136" rx="20" fill="url(#forestGradient)" stroke="url(#goldGradient)" stroke-width="2.5" transform="rotate(0)" />
+    <rect x="-68" y="-68" width="136" height="136" rx="20" fill="url(#forestGradient)" stroke="url(#goldGradient)" stroke-width="2.5" transform="rotate(45)" />
+
+    <!-- Circular Badge Base -->
+    <circle r="65" fill="url(#forestGradient)" stroke="url(#goldGradient)" stroke-width="3" filter="url(#subtleShadow)" />
+    <circle r="65" fill="url(#innerGlow)" />
+
+    <!-- Ornamental Inner Concentric Rings -->
+    <circle r="57" stroke="url(#goldGradient)" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.85" />
+    <circle r="53" stroke="url(#goldGradient)" stroke-width="1" opacity="0.6" />
+
+    <!-- 8 Decorative Accent Dots -->
+    <circle cx="0" cy="-55" r="2" fill="url(#goldGradient)" />
+    <circle cx="39" cy="-39" r="2" fill="url(#goldGradient)" />
+    <circle cx="55" cy="0" r="2" fill="url(#goldGradient)" />
+    <circle cx="39" cy="39" r="2" fill="url(#goldGradient)" />
+    <circle cx="0" cy="55" r="2" fill="url(#goldGradient)" />
+    <circle cx="-39" cy="39" r="2" fill="url(#goldGradient)" />
+    <circle cx="-55" cy="0" r="2" fill="url(#goldGradient)" />
+    <circle cx="-39" cy="-39" r="2" fill="url(#goldGradient)" />
+
+    <!-- Top Star of Guidance (Rub el Hizb element) -->
+    <g transform="translate(0, -36) scale(0.9)">
+      <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2" fill="url(#goldGradient)" />
+      <circle r="1.5" fill="#faf9f6" />
+    </g>
+
+    <!-- Central Monogram AM with Classical Calligraphic Stems -->
+    <g transform="translate(0, -4)">
+      <!-- Letter A -->
+      <path d="M-19 16 L-8 -18 L-2 -18 L9 16 L3 16 L0 7 L-10 7 L-13 16 Z M-8.5 3 L-1.5 3 L-5 -8 Z" 
+            fill="url(#goldGradient)" 
+            stroke="#05291a" 
+            stroke-width="0.5" 
+            filter="url(#subtleShadow)" />
+
+      <!-- Letter M Intertwined -->
+      <path d="M3 -18 L10 -18 L18 6 L26 -18 L33 -18 L33 16 L28 16 L28 -7 L20 16 L16 16 L8 -7 L8 16 L3 16 Z" 
+            fill="url(#goldGradient)" 
+            stroke="#05291a" 
+            stroke-width="0.5" 
+            filter="url(#subtleShadow)" />
+    </g>
+
+    <!-- Symmetrical Olive Leaves / Growth Shoots -->
+    <g stroke="url(#goldGradient)" stroke-width="1.5" fill="none" opacity="0.9">
+      <!-- Left Sprig -->
+      <path d="M-36 12 Q-40 22 -32 30" />
+      <path d="M-38 16 Q-44 14 -42 20 Q-38 22 -38 16" fill="url(#goldGradient)" />
+      <path d="M-36 24 Q-42 24 -38 30 Q-34 28 -36 24" fill="url(#goldGradient)" />
+
+      <!-- Right Sprig -->
+      <path d="M36 12 Q40 22 32 30" />
+      <path d="M38 16 Q44 14 42 20 Q38 22 38 16" fill="url(#goldGradient)" />
+      <path d="M36 24 Q42 24 38 30 Q34 28 36 24" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Stylized Open Book / Holy Quran at Base -->
+    <g transform="translate(0, 31)">
+      <!-- Left Page -->
+      <path d="M-2 0 Q-14 -7 -28 -5 Q-26 5 -2 8 Z" fill="url(#goldGradient)" opacity="0.95" />
+      <path d="M-2 1 Q-13 -5 -25 -3" stroke="#042617" stroke-width="0.8" fill="none" />
+      <!-- Right Page -->
+      <path d="M2 0 Q14 -7 28 -5 Q26 5 2 8 Z" fill="url(#goldGradient)" opacity="0.95" />
+      <path d="M2 1 Q13 -5 25 -3" stroke="#042617" stroke-width="0.8" fill="none" />
+      <!-- Book Spine -->
+      <path d="M-2 8 L0 10 L2 8 Z" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Bottom Ribbon Arc Accent -->
+    <path d="M-28 45 Q0 52 28 45" stroke="url(#goldGradient)" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

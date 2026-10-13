@@ -1,0 +1,8 @@
+# Robots.txt for Yayasan Albakriatul Mudassirin
+# Standards compliant with Google Search Central
+
+User-agent: *
+Allow: /
+
+# Sitemap declaration
+Sitemap: https://albakriatulmudassirin.sch.id/sitemap.xml

@@ -1,0 +1,23 @@
+{
+  "name": "Yayasan Albakriatul Mudassirin",
+  "short_name": "YAM Bogor",
+  "description": "Lembaga Pendidikan Islam Terpadu TK, SMP IT, dan SMK Vokasi di Bogor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#09452b",
+  "icons": [
+    {
+      "src": "/images/logo_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
